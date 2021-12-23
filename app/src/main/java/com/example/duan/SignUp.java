@@ -14,7 +14,6 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.google.android.material.button.MaterialButtonToggleGroup;
 import com.google.android.material.textfield.TextInputEditText;
 import com.vishnusivadas.advanced_httpurlconnection.PutData;
 
@@ -81,7 +80,7 @@ public class SignUp extends AppCompatActivity {
                             data[2] = username;
                             data[3] = password;
 
-                            PutData putData = new PutData("http://192.168.1.8/loginregister/signup.php", "POST", field, data);
+                            PutData putData = new PutData("http://192.168.1.10/loginregister/signup.php", "POST", field, data);
                             if (putData.startPut()) {
                                 if (putData.onComplete()) {
 
@@ -92,6 +91,10 @@ public class SignUp extends AppCompatActivity {
                                     {
                                         Toast.makeText(getApplicationContext(),result,Toast.LENGTH_LONG).show();
                                         Intent intent = new Intent(getApplicationContext(),Login.class);
+                                        intent.putExtra("fullname", fullname);
+                                        intent.putExtra("username", username);
+                                        intent.putExtra("email", email);
+
                                         startActivity(intent);
                                         finish();
                                     }

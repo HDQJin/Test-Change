@@ -3,14 +3,19 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Admin/Downloads/happyFood-main/app/src/main/res/drawable/ic_email.xml" value="0.2703125" />
         <entry key="..\:/Users/Admin/Downloads/happyFood-main/app/src/main/res/drawable/ic_fullname.xml" value="0.2703125" />
+        <entry key="..\:/Users/Admin/Downloads/happyFood-main/app/src/main/res/drawable/ic_name.xml" value="0.2703125" />
         <entry key="..\:/Users/Admin/Downloads/happyFood-main/app/src/main/res/drawable/ic_user.xml" value="0.1259259259259259" />
         <entry key="..\:/Users/Admin/Downloads/happyFood-main/app/src/main/res/layout/activity_change.xml" value="0.1" />
-        <entry key="..\:/Users/Admin/Downloads/happyFood-main/app/src/main/res/layout/activity_forget.xml" value="0.4" />
+        <entry key="..\:/Users/Admin/Downloads/happyFood-main/app/src/main/res/layout/activity_changepost.xml" value="0.1" />
+        <entry key="..\:/Users/Admin/Downloads/happyFood-main/app/src/main/res/layout/activity_forget.xml" value="0.264" />
         <entry key="..\:/Users/Admin/Downloads/happyFood-main/app/src/main/res/layout/activity_login.xml" value="0.12" />
         <entry key="..\:/Users/Admin/Downloads/happyFood-main/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Users/Admin/Downloads/happyFood-main/app/src/main/res/layout/activity_menu.xml" value="0.12360688956433637" />
-        <entry key="..\:/Users/Admin/Downloads/happyFood-main/app/src/main/res/layout/activity_post.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Admin/Downloads/happyFood-main/app/src/main/res/layout/activity_post.xml" value="0.18376068376068377" />
+        <entry key="..\:/Users/Admin/Downloads/happyFood-main/app/src/main/res/layout/activity_show_information.xml" value="0.2" />
+        <entry key="..\:/Users/Admin/Downloads/happyFood-main/app/src/main/res/layout/activity_showinformation.xml" value="0.264" />
         <entry key="..\:/Users/Admin/Downloads/happyFood-main/app/src/main/res/layout/activity_showpassword.xml" value="0.12360688956433637" />
         <entry key="..\:/Users/Admin/Downloads/happyFood-main/app/src/main/res/layout/activity_sign_up.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Admin/Downloads/happyFood-main/app/src/main/res/layout/activity_trang_chu.xml" value="0.25416666666666665" />

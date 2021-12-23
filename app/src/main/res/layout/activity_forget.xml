@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".SignUp">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".SignUp">
 
     <com.google.android.material.button.MaterialButtonToggleGroup
         android:id="@+id/btg_theme"
@@ -67,7 +67,7 @@
         android:layout_marginLeft="70sp"
         android:layout_marginTop="70dp"
         android:text=" Your email is: "
-        android:textSize="30dp"/>
+        android:textSize="30dp" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
@@ -87,7 +87,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:drawableRight="@drawable/ic_email"
-            android:fontFamily="sans-serif"/>
+            android:fontFamily="sans-serif" />
 
 
     </com.google.android.material.textfield.TextInputLayout>

@@ -13,16 +13,14 @@
         android:theme="@style/Theme.DuAn"
         android:usesCleartextTraffic="true">
         <activity
-
+            android:name=".ShowInformation"
+            android:exported="false" />
+        <activity
             android:name=".Post"
-            android:exported="true"
             android:allowEmbedded="true"
+            android:exported="true"
             android:label="@string/Post"
-
-            android:theme="@style/Theme.Design.NoActionBar">
-
-
-        </activity>
+            android:theme="@style/Theme.Design.NoActionBar"></activity>
         <activity
             android:name=".TrangChu"
             android:exported="true" />
@@ -32,9 +30,12 @@
         <activity
             android:name=".SignUp"
             android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
-
         <activity
             android:name=".Login"
             android:exported="true">
@@ -45,19 +46,13 @@
             android:exported="true" />
         <activity
             android:name=".ChangePassword"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-
+            android:exported="true"></activity>
         <activity
             android:name=".Forget"
-            android:exported="true" >
-
-        </activity>
+            android:exported="true"></activity>
+        <activity
+            android:name=".ChangePost"
+            android:exported="true"></activity>
     </application>
 
 </manifest>

@@ -11,6 +11,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ProgressBar;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.material.button.MaterialButtonToggleGroup;
@@ -19,7 +20,7 @@ import com.vishnusivadas.advanced_httpurlconnection.PutData;
 
 public class Login extends AppCompatActivity {
 
-
+    TextView textViewUsername, textViewFullName, textViewEmail;
     TextInputEditText txtUsername,txtPassword;
     Button btnLogin,btnSignup,btnLight,btnDefault,btnDark;
     ProgressBar prBar;
@@ -30,11 +31,8 @@ public class Login extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-
         addControl();
         addEven();
-
-
     }
 
     private void addControl() {
@@ -106,8 +104,12 @@ public class Login extends AppCompatActivity {
                             String[] data = new String[2];
                             data[0] = username;
                             data[1] = password;
+                            Intent intent1 = getIntent();
+                            String getFullName = intent1.getStringExtra("fullname");
+                            String getUsername = intent1.getStringExtra("username");
+                            String getEmail = intent1.getStringExtra("email");
 
-                            PutData putData = new PutData("http://192.168.1.8/loginregister/login.php", "POST", field, data);
+                            PutData putData = new PutData("http://192.168.1.10/loginregister/login.php", "POST", field, data);
                             if (putData.startPut()) {
                                 if (putData.onComplete()) {
 
@@ -117,7 +119,12 @@ public class Login extends AppCompatActivity {
                                     if(result.equals("Login Success"))
                                     {
                                         Toast.makeText(getApplicationContext(),result,Toast.LENGTH_LONG).show();
-                                        Intent intent = new Intent(getApplicationContext(),MainActivity.class);
+                                        Intent intent = new Intent(getApplicationContext(),ShowInformation.class);
+
+                                        intent.putExtra("getFullName", getFullName);
+                                        intent.putExtra("getUsername", getUsername);
+                                        intent.putExtra("getEmail", getEmail);
+
                                         startActivity(intent);
                                         finish();
                                     }

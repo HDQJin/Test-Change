@@ -19,5 +19,8 @@
     <string name="forget_password">"Forget Password"</string>
     <string name="remember">"Watch"</string>
     <string name="change">CHANGE</string>
+    <string name="change_post">CHANGE POST</string>
+    <string name="information">INFORMATION</string>
+
     <string name="login_here">Already have an acount? <u>login</u></string>
 </resources>
